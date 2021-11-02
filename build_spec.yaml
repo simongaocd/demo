@@ -5,6 +5,6 @@ shell: bash
 
 steps:
   - type: Command
-    name: "spring-boot package"
+    name: "Maven install"
     command: |
-      mvnw spring-boot:repackage
+      mvn clean install
