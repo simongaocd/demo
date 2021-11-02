@@ -7,4 +7,9 @@ steps:
   - type: Command
     name: "Maven install"
     command: |
-      mvn clean install
+      mvn package spring-boot:repackage
+
+outputArtifacts:                  
+  - name: output1           
+    type: BINARY       
+    location: /workspace/my_source_git01/pom.xml
